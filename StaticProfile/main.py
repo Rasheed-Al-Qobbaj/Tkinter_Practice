@@ -20,7 +20,7 @@ class MainApplication(tk.Tk):
         self.photo = None
 
         # Set window title and size
-        self.title("Static Profile")
+        self.title("StaticProfile")
         self.geometry("750x600")
 
         # Set window background color
