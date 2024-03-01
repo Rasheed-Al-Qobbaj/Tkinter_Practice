@@ -68,6 +68,23 @@ class MainApplication(tk.Tk):
         self.text.config(state=tk.DISABLED)
         self.text.pack(pady=10)
 
+        # Create a title label
+        title_label = tk.Label(self, text="Things I Love", font=("Helvetica", 24, 'bold'), fg="white", bg='#2D2D2D')
+        title_label.pack(pady=10)
+
+        # Create a list of things you love
+        things_i_love = ["• Myself", "• Coding", "• Python", "• AI"]
+
+        # Create a Listbox widget
+        self.listbox = tk.Listbox(self, font=("Helvetica", 12), fg="white", bg='#2D2D2D', bd=0, highlightthickness=0)
+
+        # Insert each item from the list into the Listbox
+        for item in things_i_love:
+            self.listbox.insert(tk.END, item)
+
+        # Pack the Listbox to make it visible
+        self.listbox.pack()
+
         # Create email label
         self.label = tk.Label(self, text="Email: rasheedsrq@gmail.com", font=("Helvetica", 12), fg="white",
                               bg='#2D2D2D')
